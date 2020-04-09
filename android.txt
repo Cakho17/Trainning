@@ -1,0 +1,37 @@
+<TextView
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" // 0dp voi
+    android:text="TEXT2222"
+    android:textSize="30sp" sp voi chu textsize
+    android:textColor="#DB1056"
+    android:background="#C4FFC6"/>
+	
+♣ Chương 3: Layout trong Android 
+_ Khái niệm về view, viewgroup 
+_ Linear layout 
+_ Relative layout 
+_ Frame layout : add layers to components
+_ Table layout 
+_ Constraint layout
+
+====================================================
+txtTEST = (TextView) findViewById(R.id.textViewTEST); // anh xa
+
+
+imgTest = (ImageView) setImageResource(R.drawable.tenanh); 
+
+txtTEST.function().... // viet code
+
+// event
+btnClickMe.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        txtTEST.setText("fffffffffffffffffff");
+    }
+});
+
+Toast.makeText(MainActivity.this, edtTEST.getText(), Toast.LENGTH_LONG).show(); // push thong bao
+Integer.parseInt(String s) // chuyen string ve int
+int number = random.nextInt(max-min + 1) + min;
+txtNumber.setText(number + ""); // chuyen int ->String // String.valueOf(int data);
