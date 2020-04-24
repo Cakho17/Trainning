@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btRGB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RBG" />
+
+        <Button
+            android:id="@+id/btGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gray" />
+
+        <Button
+            android:id="@+id/btYcrCb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YcrCb" />
+        <Button
+            android:id="@+id/btHSV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HSV1" />
+
+        <Button
+            android:id="@+id/btHsv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onHSVClicked"
+            android:text="HSV" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/demo1"/>
+
+</RelativeLayout>
